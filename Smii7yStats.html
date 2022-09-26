@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+  window.onload = function () {
+     var chart = new CanvasJS.Chart("chartContainer",
+     {
+       title:{
+       text: "Monthy Gained Video Views for 'SMii7Y' "
+       },
+       axisX: {
+         valueFormatString: "MMM",
+         interval:1,
+         intervalType: "month"
+       },
+       axisY:{
+          includeZero: false
+
+       },
+       data: [
+       {
+         type: "line", 
+
+         dataPoints: [
+         { x: new Date(2019, 05, 1), y: 23721380 },
+         { x: new Date(2019, 06, 1), y: 22562020 },
+         { x: new Date(2019, 07, 1), y: 23717329 },
+         { x: new Date(2019, 08, 1), y: 23777413 },
+         { x: new Date(2019, 09, 1), y: 23146978 },
+         { x: new Date(2019, 10, 1), y: 18965096 },
+         { x: new Date(2019, 11, 1), y: 14253972 }, 
+         { x: new Date(2020, 00, 1), y: 20080783 },
+         { x: new Date(2020, 01, 1), y: 16244459 },
+         { x: new Date(2020, 02, 1), y: 16294246 },
+         { x: new Date(2020, 03, 1), y: 18782251 },
+         { x: new Date(2020, 04, 1), y: 13879265 },
+         { x: new Date(2020, 05, 1), y: 12852170 },
+         { x: new Date(2020, 06, 1), y: 17609177 },
+         { x: new Date(2020, 07, 1), y: 13606766 },
+         { x: new Date(2020, 08, 1), y: 10476748 },
+         { x: new Date(2020, 09, 1), y: 13486151 },
+         { x: new Date(2020, 10, 1), y: 22355759 },
+         { x: new Date(2020, 11, 1), y: 19321172 },
+         { x: new Date(2021, 00, 1), y: 24148583 },
+         { x: new Date(2021, 01, 1), y: 22116952 },
+         { x: new Date(2021, 02, 1), y: 24327248 },
+         { x: new Date(2021, 03, 1), y: 22988239 },
+         { x: new Date(2021, 04, 1), y: 25047728 },
+         { x: new Date(2021, 05, 1), y: 28429035 },
+         { x: new Date(2021, 06, 1), y: 34467683 },
+         { x: new Date(2021, 07, 1), y: 29614495 },
+         { x: new Date(2021, 08, 1), y: 28178679 },
+         { x: new Date(2021, 09, 1), y: 27540407 },
+         { x: new Date(2021, 10, 1), y: 30203644 },
+         { x: new Date(2021, 11, 1), y: 38641506 },
+         { x: new Date(2022, 00, 1), y: 47535462 },
+         { x: new Date(2022, 01, 1), y: 32413672 },
+         { x: new Date(2022, 02, 1), y: 39184180 },
+         { x: new Date(2022, 03, 1), y: 34780605 }
+         ]
+       }
+       ]
+     });
+     chart.render();
+    }
+    </script>
+   <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+<body>
+ <div id="chartContainer" style="height: 300px; width: 100%;">
+ </div>
+</body>
+</html

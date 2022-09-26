@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <div style="background-color:yellow">
+ <head>
+  <title>Cheese Crackers</title>
+  <style>
+   h1 {
+     text-align:center;
+     font-family: 'Trebuchet MS', sans-serif;
+   }
+   aside{
+    padding-left:30px;
+    margin-left:30px;
+    padding-right: 30px;
+    margin-right: 840px;
+    background-color: #fde2a0;
+    box-shadow: inset 5px -5px 5px -5px #29627e;
+   }
+   .pracs {
+     font-family:'Comic Sans MS', sans-serif;
+     text-color:red;
+     transition: 1s;
+   }
+   .pracs:hover{
+     text-color:blue;
+   }
+   .button{
+     padding: 200px 200px;
+     margin: 50px 50px;
+     width: 50px;
+     height: 50px;
+     background-color:green;
+     color:white;
+     transition: 1s;
+   }
+   .button:hover{
+     background-color:blue;
+     color:black;
+     transform: scale(1.04);
+   }
+  </style>
+ </head>
+ <body>
+   <header>
+     <h1>Cheese Crackers</h1>
+   </header>
+   <p class="pracs">
+     Cheese and crackers is a common snack food or hors d'oeuvre consisting of crackers paired with various cheeses. In the United States it has also been served as a dessert, with the addition of ingredients such as jam, jelly, marmalade or preserves. It is also commonly served at parties in the U.S., and in the Southern United States, it is relatively common for hot chili pepper jelly to be served atop cream cheese and crackers at cocktail parties. Cheese and crackers has a relatively high amount of protein, per the cheese as an ingredient
+   </p>
+   <img src="th.jpg"/>
+   <aside>
+    <h2 id="sd">This is a cheese cracker</h2>
+   </aside>
+   <button class="button" onclick="aFunction()">This is a Button</button>
+   <script>
+   function aFunction(){
+     document.getElementById("sd").style.fontSize = "23px";
+     document.getElementById("sd").style.color = "blue";
+   }
+   </script>
+ </body>
+</html>

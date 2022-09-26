@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <script type="text/javascript">
+ window.onload = function () {
+   var chart = new CanvasJS.Chart("chartContainer",
+   {
+   title:{
+     text: "Results of the 2020 USA Presidential Election by Candidate"
+   },
+    data: [
+     {
+     type: "doughnut", 
+     dataPoints: [
+       {y: 51.31, indexLabel: "Joe Biden"},
+       {y: 46.86, indexLabel: "Donald Trump"},
+       {y: 1.18, indexLabel: "Jo Jorgensen"},
+       {y: 0.26, indexLabel: "Howie Hawkins"}, 
+       {y: 0.40, indexLabel: "Others"}
+     ]
+     }
+    ]
+    });
+    chart.render();
+   }
+ </script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+ <div id="chartContainer" style="height:300px; width:100%;">
+ </div>
+</body>
+</html>

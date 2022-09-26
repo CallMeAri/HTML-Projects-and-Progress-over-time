@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer", 
+    {
+      title:{
+       text: "2016 election results by Candidate"
+      },
+      data: [
+      
+       {
+
+         type: "doughnut",
+         dataPoints: [
+         {y:48.18, indexLabel: "Hilary Clinton"},
+         {y:46.09, indexLabel: "Donald Trump"},
+         {y:3.28, indexLabel: "Gary Johnson"},
+         {y:1.07, indexLabel: "Jill Stein"},
+         {y:1.38, indexLabel: "Others"}
+         ]
+         }
+       ]
+       });
+     chart.render();
+    }
+   </script>
+   <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js">
+</head>
+<body>
+ <div id="chartContainer" style="height: 300px; width: 100%;">
+ </div>
+</body>
+</html>

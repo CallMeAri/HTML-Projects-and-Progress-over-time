@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<div style="background-color:yellow">
+ <head>
+  <title>Welcome to a WebGame</title>
+  <style>
+  .button {
+   color:black;
+   background-color:green;
+   }
+  .button2 {
+    color:black;
+    background-color:red;
+   }
+  .button3 {
+    color:black;
+    background-color:yellow;
+   
+   }
+   .button:hover{
+   color:white;
+   background-color:blue;
+   }
+   .button2:hover{
+   color:white;
+   background-color:blue;
+   }
+   .button3:hover{
+   color:white;
+   background-color:blue;
+   }
+   .button4{
+    color:black;
+    background-color:purple;
+   } 
+   .button4:hover{
+   color:white;
+   background-color:blue;  
+   }
+  </style>
+ <head>
+ <body>
+  <h1 style="text-align:center" id="petr">Welcome!</h1>
+  <p id="heder">In this webgame, you will be able to choose three buttons, one of which leads to another webpage.Just Guess this and you will do great!</p>
+  <script>
+   var button1 = document.getElementById("button");
+   var button2 = document.getElementById("button2");
+   var button3 = document.getElementById("button3");
+   var button4 = document.getElementById("button4");
+   function loserConsequence(){
+   	document.getElementById("heder").innerHTML = "You chose the wrong button dipshit";
+   	document.getElementById("petr").innerHTML = "You fool!";
+        button1.style.display="none";
+        button2.style.display="none";
+        button3.style.display="none";
+        
+   }
+   function resetButton(){
+    document.getElementById("petr").innerHTML = "Welcome!";
+    document.getElementById("heder").innerHTML = "In this webgame, you will be able to choose three buttons, one of which leads to another webpage.Just Guess this and you will do great!";
+    button1.style.display="inline-block";
+    button2.style.display="inline-block";
+    button3.style.display="inline-block";
+    
+   }
+   function winnerConsequence(){
+       document.getElementById("heder").innerHTML = "You Win!";
+       document.getElementById("petr").innerHTML = "You get nothing!";
+       button1.style.display="none";
+       button2.style.display="none";
+       button3.style.display="none";
+      
+   }
+  </script>
+  <button class="button" onclick="loserConsequence();">Click Me!</button>
+  <button class="button2" onclick="loserConsequence()">Click Me!</button>
+  <button class="button4" onclick="resetButton()">Reset</button>
+  <a href="MoreHTMLPractice.html" target="_blank" rel="noopener noreferrer"><button class="button3" onclick="winnerConsequence()">Click Me!</button>
+ </body>
+</html>

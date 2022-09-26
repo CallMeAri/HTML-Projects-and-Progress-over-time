@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Displaying Time Using Java Script</title>
+ </head>
+ <body>
+   <marquee behavior="scroll" bgcolor="yellow" loop="-1" width="30%">
+       <i>
+          <font color="blue">
+           Today's date is:
+           <strong>
+            <span id="time"><span>
+           </strong>
+          </font>
+       </i>
+   </marquee>
+  <script type="text/javascript">
+   now = new Date();
+   localtime = now.toString();
+   utctime = now.toGMTString();
+   document.write("<p><strong>Local time:</strong> " + localtime + " </p>");
+   document.write("<p><strong>UTC time:</strong> " + utctime + " </p>");
+   var today = new Date();
+   document.getElementById('time').innerHTML=today;
+   hours = now.getHours();
+   mins = now.getMinutes();
+   secs = now.getSeconds();
+   millisecs = now.getMilliseconds();
+   document.write("<h2>");
+   document.write(hours + ":" + mins + ":" + secs + ":" + millisecs);
+   document.writeln(hours + ":" + mins + ":" + secs + ":" + millisecs);
+  </script>
+ </body>
+</html>
